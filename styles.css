@@ -1,0 +1,560 @@
+/* General */
+input[type=text],[type=date],select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label{
+  color:#0c344e;
+}
+
+.background-container {
+  background-image: url(images/landingpageimage1400.jpg);
+  background-repeat: no-repeat;
+  height: 800px;
+  text-align: center;
+ /* opacity: 0.3;*/
+}
+
+.pagetitle{
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 40px;
+  /* letter-spacing: 2px; */
+  /* word-spacing: 2px; */
+  color: #4e4d4d;
+  font-weight: bolder;
+  font-variant: normal;
+  text-transform: none;
+
+}
+
+.formlabel{
+  /* 
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px; */
+  /* word-spacing: 2px; 
+  color: black;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: left;
+  */
+}
+#template{
+  width: 40%;
+}
+
+.formselectiondefault{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+  /* letter-spacing: 2px; */
+  /* word-spacing: 2px; */
+  color: #808080;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+.scrolltemplate{
+  background-color: white;
+  background-color: white;
+  overflow: scroll;
+  /* width: 95%; */
+  height: 350px
+}
+
+.navigationbutton-container{
+  position:relative;
+  text-align: right;
+  margin-right: 2%;
+  float: right;
+}
+
+.page-container {
+    background-image: url(images/landingpageimage1400.jpg);
+    background-repeat: no-repeat;
+    height: 614px;
+  }
+
+  .header-container {
+      height: 80px;
+  }
+
+  .spacelogo-container {
+    position: relative;
+    text-align: left;
+    left: 5%;
+    float: left;
+    width: 70%;
+  }
+
+  .headerlinks-container{
+    position: relative;
+    text-align: right;
+    width: 10%;
+    float: left;
+  }
+
+  .aboutus-container {
+    position: relative;
+    text-align: right;
+    width: 10%;
+    float: left;
+  }
+
+  .contact-container {
+    position: relative;
+    text-align: right;
+    /* right: 60%; */
+    float: left;
+    width: 10%;
+  }
+
+
+
+  .singpassloginpart-container {
+    position: relative;
+    text-align: right;
+    border: none;
+    padding: 0;
+    top: 16%;
+    right: 2%;
+    border: none;
+    background: none;
+
+}
+
+.footer-container {
+    background: grey;
+
+}
+
+
+#spacelogo{
+    width: 200px;
+    height: 80px;  
+}
+
+#aboutuslogo{
+    height: 60px;
+    padding-top: 5px; 
+}
+
+#faqlogo{
+    height: 60px;
+    padding-top: 5px; 
+    padding-right: 15px;
+}
+
+
+#contactlogo{
+    height: 60px;
+    padding-top: 5px;
+    padding-right: 40px;
+}
+
+/* Home Page CSS */
+
+.selectrole-container {
+    background-image: url(images/landingpageimage1400.jpg);
+    background-repeat: no-repeat;
+    height: 614px;
+    text-align: center;
+   /* opacity: 0.3;*/
+  }
+
+  .side-container {
+    position: relative;
+    width: 31%;
+    float:left;
+  }
+
+
+  .middle-container {
+    position: relative;
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    border-radius: 30px;
+    display:block
+   
+  }
+
+  .landloardroleimage{
+      width:203.5px;
+      height:220.5px
+  }
+  .tenantroleimage{
+    width:213px;
+    height:225px
+  }
+
+  .selectionspan{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+      
+  }
+
+  .landlordmenu-container{
+    position: relative;
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: none;
+  }
+
+  .landlordimage-container{
+    text-align: center;
+  }
+
+  .landlordsubmenu{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    /*
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    */
+    
+
+  }
+
+  
+
+  .tenancyagreementlogo-container{
+    background-color: black;
+  }
+  
+  .tenancyagreementspan{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    word-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+      
+  }
+
+  .tenantmenu-container{
+    position: relative;
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: none;
+  }
+
+/* Select Template Page*/
+
+.createta-container {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10%;
+    border-radius: 30px;
+    display: block;
+    height: 700px;
+}
+
+
+
+.createTAstepimage{
+  width: 79%;
+  /*height: 30%; */
+  position: relative;
+
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.selecttemplatelabel-container{
+  /*
+  border-style: solid;
+  border-color: gray;
+  border-top-left-radius: 5px ;
+  border-top-right-radius: 5px;
+  */
+  text-align: left;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+
+.template-container{
+  background-color: white;
+  width: 95%;
+ 
+  margin-left: 2.5%;
+  border-style: solid;
+  border-color: gray;
+   border-radius: 5px; 
+}
+
+/* button*/
+
+.nextbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0c344e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 88px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.nextbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nextbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nextbutton:hover span {
+  padding-right: 25px;
+}
+
+.nextbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cancelbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #5e0505;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 88px;
+  margin: 5px;
+}
+
+.backbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 88px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: none;
+}
+
+.backbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.backbutton span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.backbutton:hover span {
+  padding-left: 25px;
+}
+
+.backbutton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/**/
+
+#createtastep2{
+  display: none;
+}
+
+#createtastep3{
+  display: none;
+}
+
+#createtastep4{
+  display: none;
+}
+
+.companydetails-container{
+  margin-left: 10%;
+  text-align: left;
+  margin-top: 5%;
+}
+.companydetailssubform-container{
+  width: 40%;
+  position: relative;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: left;
+}
+
+
+.retrievewithsingpassbutton{
+  width: 93%;
+  height: 69px;
+  margin-left: 4%;
+}
+
+.retrievewithsingpassbutton-container{
+  width: 40%;
+  text-align: left;
+  float: left;
+  position: relative;
+}
+
+.retrievewithsingpassinfo-container{
+  width: 60%;
+  text-align: left;
+  float: left;
+  margin-top: 6px;
+}
+
+.retrievewithsingpassinfo-container span{
+  font-size: 17px;
+  font-family: "Roboto";
+  color: #6e6e6e;
+  margin-top: 2px;
+}
+
+.companydetailsform-container{
+  position: relative;
+  float: left;
+}
+
+.retrievewithsingpass-container{
+  width: 100%;
+  margin: 4px;
+}
+
+
+/* TERM & CONDITION*/
+
+input#postal {
+  width: 30%;
+}
+
+.retrieveaddressbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #625b5b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 92px;
+  margin: 5px;
+}
+
+#retrievebuttonspan{
+  color: #FFFFFF;
+}
+
+input#tenure{
+  width: 10%;
+}
+
+input#block {
+  width: 20%;
+}
+input.currency_input{
+  width: 30%;
+}
+
+input#unit_floor,input#unit_no  {
+  width: 15%;
+}
+
+input#street, input#property_name {
+  width: 65%;
+}
+
+.rentaltncsubform-container{
+  width: 40%;
+  position: relative;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: left;
+}
+
+.rentaltncform-container{
+  position: relative;
+  float: left;
+  width:100%
+}
+
+input#commencement{
+  width: 44%;
+  color: darkgrey;
+}
+
+#unitlabel{
+  padding-left:14px
+}
+
+.companydetailssubform-container span {
+  color: grey;
+}
+
+.termandcondsubform-container {
+  position: relative;
+  text-align: left;
+  margin-left: 21px;
+  width: 95%;
+  float: left;
+  margin-top: 4px;
+}

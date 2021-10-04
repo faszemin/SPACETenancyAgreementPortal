@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPACE Prototype - Create Tenancy Agreement</title>
+    <script src="js/create_ta.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hdbagreementstyle.css">
+</head>
+
+<body>
+    
+    <div class="header-container">
+        <div class="spacelogo-container"><img id="spacelogo" src="images/Logo.jpg"> </div>
+        <div class="headerlinks-container"><img id="aboutuslogo" src="images/aboutus.jpg"></div>
+        <div class="headerlinks-container"><img id="faqlogo" src="images/faq.jpg"></div>
+        <div class="headerlinks-container"><img id="contactlogo" src="images/contact.jpg"></div>
+    </div>
+
+    <div class="background-container">
+        <div class="createta-container">
+            <div><span class="pagetitle">CREATE TENANCY AGREEMENT</span></div>
+            <div class="createTAformsteps-container"><img id="createtastepid" class="createTAstepimage" src="images/create-1.jpg"></div>
+            <div id="createtastep1" >
+            <div class="selecttemplatelabel-container">
+                
+                <label for="template" class="formlabel">TENANCY AGREEMENT TEMPLATE:</label>
+                <select name="template" id="template" onchange="displayTemplate()">
+                    <option class="formselectiondefault" value="none" selected="selected" disabled="disabled" hidden="hidden">PLEASE SELECT</option>
+                    <option value="hdb">HDB COMMERCIAL</option>
+                    <option value="industrial">INDUSTRIAL</option>
+                    <option value="retail">RETAIL</option>
+                </select>
+               
+                
+            </div>
+<!--
+            <div id='retailTemplate' class="scrolltemplate">
+                Tenancy Agreement (Retail)
+
+            </div>
+-->         <div class="template-container">
+            <div id='hdbTemplate' class="scrolltemplate">
+                <h1 id="title">TENANCY AGREEMENT FOR COMMERCIAL PREMISES
+                </h1>
+              <section class="wrapper"> 
+                <div class="one"> 1</div>
+              <div class="two">THIS AGREEMENT is made on the date set out in Item 1 of
+                Schedule 1 between the:-
+                1. Housing and Development Board set out in Item 2 of
+                Schedule 1 (hereinafter called “the HDB”); and
+                2. Tenant as named in Item 3 of Schedule 1 (hereinafter called
+                “the Tenant”).
+              </div>
+              <div class="three">Parties</div>
+              
+              <div class="one">2</div>
+              <div class="two">Whereby it is agreed as follows:-
+                (a) In consideration of the rent and service and conservancy charges set
+                out in Items 7 and 8 of Schedule 1 for the term set out in Item 6 of
+                Schedule 1 and the Tenant's covenants contained in this Agreement,
+                the HDB agrees to let to the Tenant all that Premises set out in Item
+                4 of Schedule 1 (“the Premises) and delineated and coloured red on
+                the plan annexed which is subject to final survey being part of the
+                building, together with the right of the Tenant and others duly
+                authorised by the Tenant and in consensus with the HDB and all
+                others so authorised by the HDB and all others so entitled thereto at
+                all times during the tenancy hereby created and for all purposes
+                connected with the use of the Premises
+                (i) To use the usual entrances, exits, landings and corridors
+                leading to the Premises;
+                (ii) To use the lifts, escalators and stairs (if any) provided for
+                the Premises or the building of which the Premises form
+                part.
+                The address of the Building is set out in Item 5 of Schedule 1.
+                EXCEPTING AND RESERVING unto the HDB and all others entitled
+                thereto the free and uninterrupted use of all pipes, electric, telephone
+                and other wires, drains and sewer in, through or under the Premises.
+                To hold the same unto the Tenant for a term set out in Item 6 of
+                Schedule 1.
+               
+                (b) (i) For new buildings, the commencement date of the Tenancy
+                is subject to issuance of the Temporary Occupation Permit
+                (“the TOP”) by the relevant Authorities and shall be based
+                on the expiry of the fourteen (14) calendar days’ Notice to
+                Take Possession by the HDB. The Tenant shall be deemed
+                to have taken possession of the Premises on the expiry
+                date set out in the notice. In the event that the TOP is
+                delayed for whatever reasons, the HDB shall not be liable
+                or responsible to the Tenant for any losses or damages
+                arising directly or indirectly as a result of any late
+                commencement of the Agreement.
+                (ii) For a completed building or subsequent tenancy renewals,
+                the commencement date of the Tenancy shall be stated in
+                the Tenancy Agreement.</div>
+                
+              <div class="three">Demise of Premises </div>
+              
+              
+              <div class="one">3.1</div>
+              <div class="two">The HDB allows the Tenant rent-free fitting-out period specified in
+                Item 13 of Schedule 1 (the “Fitting-Out Period”) from the Date of
+                Possession to carry out the fitting-out works, PROVIDED ALWAYS
+                that the HDB reserves the right to demand payment of rent (based
+                on the base rent) for the fitting-out period, together with the service
+                and conservancy charges and other charges that may be due, in the
+                event that the Tenant terminates or gives notice to terminate the
+                Agreement within one (1) year of the commencement of the tenancy
+                or if the HDB terminates the tenancy at any time due to a breach by
+                the Tenant of any provisions under this Agreement.
+                
+              </div>
+              <div class="three">Rent-Free Fitting-Out
+                Period
+                </div>
+              
+              
+                <div class="one">3.2</div>
+                <div class="two">No additional rent-free “fitting-out” period shall be given to the
+                  Tenant, if more time is required for fitting-out work.
+                  
+                  
+                </div>
+                <div class="three">
+                 
+                  </div>
+                
+              
+                  <div class="one">3.3</div>
+                  <div class="two">The Tenant shall, before commencing any fitting-out works for the
+                    Premises according to the HDB’s rules, regulations and guidelines
+                    relating to the fitting-out and design works for the Premises, pay to
+                    the HDB the Fitting-Out and Design Deposit set out in Item 12 of
+                    Schedule 1.
+                 
+                    2
+                    The Fitting-Out and Design Deposit shall be held by the HDB as
+                    security for the due performance by the Tenant of the following
+                    obligations:
+                    (a) To make good to the HDB’s satisfaction all damage to the
+                    Premises resulting from the execution of the fitting-out
+                    works;
+                    (b) To remove all waste materials and debris immediately upon
+                    completion of the fitting-out works. The HDB may at its sole
+                    option, without being obliged to do so, arrange for the
+                    removal of the same off-site by its contractor and the costs
+                    therefore shall be borne by the Tenant; and
+                    (c) To comply with the requirements and abide by the terms set
+                    out in this Agreement and the Tenancy design and fittingout
+                    guide (a copy of which will be given to the Tenant).
+                    The Fitting–Out and Design Deposit will be refunded to the Tenant
+                    within one (1) month only upon the satisfactory completion of the
+                    Tenant’s fitting-out works free of interest less any amount forfeited
+                    due to the Tenant’s non-compliance with the aforesaid obligations.
+                    
+                  </div>
+                  <div class="three">   Fitting-Out and Design
+                    Deposit
+                    </div>
+                
+              
+              </section>
+              
+              
+              
+              <br><br><br>
+              <section class="wrapper2">
+                <div class="four"><br>
+                  <br><br>
+                  <br><br><br>
+                  <br><br>
+                  </div>
+              
+              
+              <div class="four">Signed by<br><br>
+                For and on behalf of the<br><br>
+                HOUSING AND DEVELOPMENT BOARD<br><br>
+                in the presence of:<br><br>
+                </div>
+              
+                <div class="five"> ) _________________________________________________________________<br><br>
+                  ) <br><br>
+                  ) <br><br><br>
+                  ) _________________________________________________________________<br><br>
+                  </div>
+              
+              
+                  <div class="four">Signed by / Right Thumb Print<br><br>
+                    ____________________________________________<br><br>
+                    Name :<br><br>
+                    NRIC No.:<br><br>
+                    </div>
+              
+              <div class="five"> ) _________________________________________________________________<br><br>
+                  ) <br><br>
+                  ) <br><br><br>
+                  ) _________________________________________________________________<br><br>
+                  </div>
+              
+                    <div class="four">For and on behalf of Company
+                      <br><br>
+                      in the presence of : <br><br>
+                      ____________________________________________<br><br>
+                      Name :<br><br>
+                      NRIC No.:<br><br>
+              
+                      Address of Premises:<br>
+              <Address> #<XX-XX> SINGAPORE <Postal Code>
+              
+                      </div>
+              </section>
+
+            </div>
+            
+
+
+            </div> <!-- END TEMPLATE CONTAINER-->
+        </div><!-- END STEP 1 CONTAINER-->
+        <div id="createtastep2"> 
+        <div class="retrievewithsingpass-container">
+          <div class="retrievewithsingpassbutton-container">
+          <img src="images/retrieve-singpass.jpg" alt="Retrieve with SingPass" class="retrievewithsingpassbutton">
+          </div>
+          <div class="retrievewithsingpassinfo-container"><span>Use MyInfo Business with your CorpPass to retrieve your business and personal data across participating Government agencies to fill up e-forms.</span> </div>
+        </div>
+      
+        <div class='companydetailsform-container'> 
+          <div class='companydetailssubform-container'>
+          
+            <label for="name">NAME: </label>
+            <input type="text" id="name" name="formtext" placeholder="Your Name">
+        
+            <label for="idnumber">IDENTIFICATION NUMBER: </label>
+            <input type="text" id="idnumber" name="formtext" placeholder="Your NRIC or Passport Number">
+
+            <label for="email">EMAIL: </label>
+            <input type="text" id="email" name="formtext" placeholder="Your Email">
+
+            <label for="mobilenum">MOBILE NUMBER: </label>
+            <input type="text" id="mobilenum" name="formtext" placeholder="Your Mobile Number ">
+          </div>
+
+          <div class="companydetailssubform-container">
+            <label for="cuen">COMPANY UEN:</label>
+            <input type="text" id="cuen" name="formtext" placeholder="Your UEN">
+
+            <label for="cname">COMPANY NAME:</label>
+            <input type="text" id="cname" name="formtext" placeholder="Your Company Name">
+
+            <label for="cname">COMPANY REGISTERED ADDRESS:</label>
+            <input type="text" id="cname" name="formtext" placeholder="Your Company Address">
+
+          </div>
+        </div>
+        </div><!-- END STEP 2 CONTAINER-->
+        <div id="createtastep3"> 
+          <div class='companydetailsform-container'> 
+
+        <div class='companydetailssubform-container'>
+          
+          
+      
+          <label for="postal">PROPERTY POSTAL CODE: </label>
+          <div>
+          <input type="text" id="postal" name="formtext" maxlength="6">
+          <button class="retrieveaddressbutton" onclick="event.preventDefault();" style="vertical-align:middle"><span id="retrievebuttonspan">RETRIEVE </span></button>
+        </div>
+
+          <div>
+        <label for="property_name">BUILDING NAME: </label>
+          <input type="text" id="property_name" name="formtext" placeholder="">
+        </div>
+          <div>
+          <label for="block">BLOCK: </label>
+          <input type="text" id="block" name="formtext" maxlength="5">
+          <label for="unit"id="unitlabel">UNIT NO: </label>
+          <span>#</span>
+          <input type="text" id="unit_floor" name="formtext" placeholder="">
+          </span> - </span>
+          <input type="text" id="unit_no" name="formtext" placeholder="">
+        </div>
+
+        <div>
+          <label for="street">STREET NAME: </label>
+          <input type="text" id="street" name="formtext" placeholder="">
+        </div>
+          
+        </div>
+
+        <div class="companydetailssubform-container">
+          <div>
+          <label for="tenure">DURATION:</label>
+         
+          <input type="text" id="tenure" name="formtext" placeholder="" maxlength="2">
+          <span> months</span>
+        </div>
+
+        <div>
+
+          <label for="commencement">COMMENCEMENT:</label>
+          <input type="date" id="commencement" name="formtext" placeholder="dd/mm/yyyy">
+        </div>
+
+        <div>
+          <label for="deposit">SECURITY DEPOSIT:</label>
+          <span>$</span>
+          <input type="text" class="currency_input"id="deposit" name="formtext" placeholder="">
+        </div>
+
+        <div>
+          <label for="rental">MONTHLY RENTAL RATE:</label>
+          <span>$</span>
+          <input type="text" id="rental" class="currency_input"
+          name="formtext" placeholder="">
+        </div>
+
+        </div>
+
+     
+        </div>
+        <div class="termandcondsubform-container">
+          <label for="tenure">TERMS & CONDITIONS:</label>
+         
+          
+        <textarea id="tnctextarea" name="tnctextarea" rows="8" cols="120"></textarea>
+
+        </div>
+
+      </div><!-- END STEP 3 CONTAINER-->
+        <div id="createtastep4"> 
+          <div class="template-container">
+            <div id='hdbTemplate' class="scrolltemplate">
+                <h1 id="title">TENANCY AGREEMENT FOR COMMERCIAL PREMISES
+                </h1>
+              <section class="wrapper"> 
+                <div class="one"> 1</div>
+              <div class="two">THIS AGREEMENT is made on the date set out in Item 1 of
+                Schedule 1 between the:-
+                1. Housing and Development Board set out in Item 2 of
+                Schedule 1 (hereinafter called “the HDB”); and
+                2. Tenant as named in Item 3 of Schedule 1 (hereinafter called
+                “the Tenant”).
+              </div>
+              <div class="three">Parties</div>
+              
+              <div class="one">2</div>
+              <div class="two">Whereby it is agreed as follows:-
+                (a) In consideration of the rent and service and conservancy charges set
+                out in Items 7 and 8 of Schedule 1 for the term set out in Item 6 of
+                Schedule 1 and the Tenant's covenants contained in this Agreement,
+                the HDB agrees to let to the Tenant all that Premises set out in Item
+                4 of Schedule 1 (“the Premises) and delineated and coloured red on
+                the plan annexed which is subject to final survey being part of the
+                building, together with the right of the Tenant and others duly
+                authorised by the Tenant and in consensus with the HDB and all
+                others so authorised by the HDB and all others so entitled thereto at
+                all times during the tenancy hereby created and for all purposes
+                connected with the use of the Premises
+                (i) To use the usual entrances, exits, landings and corridors
+                leading to the Premises;
+                (ii) To use the lifts, escalators and stairs (if any) provided for
+                the Premises or the building of which the Premises form
+                part.
+                The address of the Building is set out in Item 5 of Schedule 1.
+                EXCEPTING AND RESERVING unto the HDB and all others entitled
+                thereto the free and uninterrupted use of all pipes, electric, telephone
+                and other wires, drains and sewer in, through or under the Premises.
+                To hold the same unto the Tenant for a term set out in Item 6 of
+                Schedule 1.
+               
+                (b) (i) For new buildings, the commencement date of the Tenancy
+                is subject to issuance of the Temporary Occupation Permit
+                (“the TOP”) by the relevant Authorities and shall be based
+                on the expiry of the fourteen (14) calendar days’ Notice to
+                Take Possession by the HDB. The Tenant shall be deemed
+                to have taken possession of the Premises on the expiry
+                date set out in the notice. In the event that the TOP is
+                delayed for whatever reasons, the HDB shall not be liable
+                or responsible to the Tenant for any losses or damages
+                arising directly or indirectly as a result of any late
+                commencement of the Agreement.
+                (ii) For a completed building or subsequent tenancy renewals,
+                the commencement date of the Tenancy shall be stated in
+                the Tenancy Agreement.</div>
+                
+              <div class="three">Demise of Premises </div>
+              
+              
+              <div class="one">3.1</div>
+              <div class="two">The HDB allows the Tenant rent-free fitting-out period specified in
+                Item 13 of Schedule 1 (the “Fitting-Out Period”) from the Date of
+                Possession to carry out the fitting-out works, PROVIDED ALWAYS
+                that the HDB reserves the right to demand payment of rent (based
+                on the base rent) for the fitting-out period, together with the service
+                and conservancy charges and other charges that may be due, in the
+                event that the Tenant terminates or gives notice to terminate the
+                Agreement within one (1) year of the commencement of the tenancy
+                or if the HDB terminates the tenancy at any time due to a breach by
+                the Tenant of any provisions under this Agreement.
+                
+              </div>
+              <div class="three">Rent-Free Fitting-Out
+                Period
+                </div>
+              
+              
+                <div class="one">3.2</div>
+                <div class="two">No additional rent-free “fitting-out” period shall be given to the
+                  Tenant, if more time is required for fitting-out work.
+                  
+                  
+                </div>
+                <div class="three">
+                 
+                  </div>
+                
+              
+                  <div class="one">3.3</div>
+                  <div class="two">The Tenant shall, before commencing any fitting-out works for the
+                    Premises according to the HDB’s rules, regulations and guidelines
+                    relating to the fitting-out and design works for the Premises, pay to
+                    the HDB the Fitting-Out and Design Deposit set out in Item 12 of
+                    Schedule 1.
+                 
+                    2
+                    The Fitting-Out and Design Deposit shall be held by the HDB as
+                    security for the due performance by the Tenant of the following
+                    obligations:
+                    (a) To make good to the HDB’s satisfaction all damage to the
+                    Premises resulting from the execution of the fitting-out
+                    works;
+                    (b) To remove all waste materials and debris immediately upon
+                    completion of the fitting-out works. The HDB may at its sole
+                    option, without being obliged to do so, arrange for the
+                    removal of the same off-site by its contractor and the costs
+                    therefore shall be borne by the Tenant; and
+                    (c) To comply with the requirements and abide by the terms set
+                    out in this Agreement and the Tenancy design and fittingout
+                    guide (a copy of which will be given to the Tenant).
+                    The Fitting–Out and Design Deposit will be refunded to the Tenant
+                    within one (1) month only upon the satisfactory completion of the
+                    Tenant’s fitting-out works free of interest less any amount forfeited
+                    due to the Tenant’s non-compliance with the aforesaid obligations.
+                    
+                  </div>
+                  <div class="three">   Fitting-Out and Design
+                    Deposit
+                    </div>
+                
+              
+              </section>
+              
+              
+              
+              <br><br><br>
+              <section class="wrapper2">
+                <div class="four"><br>
+                  <br><br>
+                  <br><br><br>
+                  <br><br>
+                  </div>
+              
+              
+              <div class="four">Signed by<br><br>
+                For and on behalf of the<br><br>
+                HOUSING AND DEVELOPMENT BOARD<br><br>
+                in the presence of:<br><br>
+                </div>
+              
+                <div class="five"> ) _________________________________________________________________<br><br>
+                  ) <br><br>
+                  ) <br><br><br>
+                  ) _________________________________________________________________<br><br>
+                  </div>
+              
+              
+                  <div class="four">Signed by / Right Thumb Print<br><br>
+                    ____________________________________________<br><br>
+                    Name :<br><br>
+                    NRIC No.:<br><br>
+                    </div>
+              
+              <div class="five"> ) _________________________________________________________________<br><br>
+                  ) <br><br>
+                  ) <br><br><br>
+                  ) _________________________________________________________________<br><br>
+                  </div>
+              
+                    <div class="four">For and on behalf of Company
+                      <br><br>
+                      in the presence of : <br><br>
+                      ____________________________________________<br><br>
+                      Name :<br><br>
+                      NRIC No.:<br><br>
+              
+                      Address of Premises:<br>
+              <Address> #<XX-XX> SINGAPORE <Postal Code>
+              
+                      </div>
+              </section>
+
+            </div>
+            
+
+
+            </div> <!-- END TEMPLATE CONTAINER-->
+
+
+        </div><!-- END STEP 4 CONTAINER-->
+        <div class="navigationbutton-container">
+                <button class="cancelbutton" onclick="window.location.href='home.html'" style="vertical-align:middle"><span>CANCEL </span></button>
+                <button class="backbutton" onclick="event.preventDefault();onBack()" style="vertical-align:middle"><span>BACK </span></button>
+                <button class="nextbutton" style="vertical-align:middle" onclick="event.preventDefault();onNext()"><span>NEXT</span></button>
+              
+            </div> <!--END NAVIGATION BUTTON CONTAINER-->
+
+        </div><!--END Page holder CONTAINER-->
+
+        
+
+       
+
+    </div> <!--END BACKGRD CONTAINER-->
+
+<!--
+    <div class="createta-container">
+        <table>
+            <tr>
+                <td>
+                    <label for="template">Tenancy Agreement Template:</label>
+        
+                    <select name="template" id="template" onchange="displayTemplate()">
+                        <option value="none" selected="selected" disabled="disabled" hidden="hidden">Select a Template</option>
+                        <option value="hdb">HDB Commercial</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="retail">Retail</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="templateSection" class="hide">
+                <td>
+        
+                    <div id='retailTemplate' class="scrolltemplate">
+                        Tenancy Agreement (Retail)
+        
+                    </div>
+        
+                    <div id='hdbTemplate' class="scrolltemplate">
+                        Tenancy Agreement (HDB)
+        
+                        <p>
+                            HDB Template
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="personalinfo_landlord.html">Next</a>
+                </td>
+        
+            </tr>
+        </table>
+        
+                </div>
+  
+-->
+
+</body>
+
+</html>

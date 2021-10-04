@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPACE Prototype - Create Tenancy Agreement</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/personalinfo_landlord.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="spacelogo-container"><img id="spacelogo" src="images/Logo.jpg"> </div>
+        <div class="headerlinks-container"><img id="aboutuslogo" src="images/aboutus.jpg"></div>
+        <div class="headerlinks-container"><img id="faqlogo" src="images/faq.jpg"></div>
+        <div class="headerlinks-container"><img id="contactlogo" src="images/contact.jpg"></div>
+    </div>
+
+    <div class="selectrole-container">
+
+       <div class="side-container"><span style="opacity:0">.</span></div>
+
+        <div class="middle-container">
+           <!-- <div class="tenancyagreementlogo-container"><span class="tenancyagreementspan">PLEASE SELECT YOUR ROLE:</span></div>
+            -->
+            <img src="images/landlord.jpg" alt="Landlord" class="landloardroleimage" 
+            onclick="$('.landlordmenu-container').css('display','block');
+                    $('.middle-container').css('display','none')">
+            <img src="images/tenant.jpg" alt="Tenant" class="tenantroleimage"
+            onclick="$('.tenantmenu-container').css('display','block');
+                    $('.middle-container').css('display','none')">
+        </div>
+        
+
+        <div class="landlordmenu-container">
+            <div class="landlordimage-container"><img src="images/landlord.jpg" alt="Landlord" class="landloardroleimage"></div>
+            <div class="tenancyagreementlogo-container"><span class="tenancyagreementspan" >TENANCY AGREEMENT</span></div>
+            <div class="landlordsubmenu-container">
+                <a href="create_ta.html"> <img src="images/create.jpg" class="landlordsubmenu" alt="Create Agreement"></a>
+                <a href="viewallagreement.html"> 
+                    <img src="images/view.jpg" class="landlordsubmenu" alt="View and Update Agreement"></a>
+                <a href="viewallagreement.html"> 
+                    <img src="images/sign.jpg" class="landlordsubmenu" alt="Accept and Sign Agreement"></a>  
+            </div>
+        </div>
+
+        <div class="tenantmenu-container">
+            <div class="landlordimage-container"><img src="images/tenant.jpg" alt="Tenant" class="tenantroleimage"></div>
+            <div class="tenancyagreementlogo-container"><span class="tenancyagreementspan" >TENANCY AGREEMENT</span></div>
+            <div class="landlordsubmenu-container">
+                <a href="viewallagreement.html"><img src="images/view.jpg" class="landlordsubmenu" alt="View and Update Agreement"></a>
+                <a href="viewallagreement.html"><img src="images/sign.jpg" class="landlordsubmenu" alt="Accept and Sign Agreement"></a>  
+            </div>
+
+        </div>
+
+
+  
+        
+       
+
+    </div>
+
+
+    <div class="footer-container"> Footer </div>
+
+
+
+</body>
+
+</html>
